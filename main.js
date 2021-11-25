@@ -41,7 +41,13 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination'
     },
     mousewheel: true,
-    keyboard: true 
+    keyboard: true,
+    breakpoints: {
+        767: {
+            slidesPerView: 2,
+            setWripperSize: true
+        }
+    }
   });
 
 // Scroll reveal: mostrar elementos quando der scroll na página
