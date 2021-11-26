@@ -138,7 +138,8 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, nav ul li a.active {
+    font-weight: bold;
     color: var(--base-color);
 }
 
@@ -156,8 +157,9 @@ nav ul li a::after {
     transition: width 0.2s;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after, nav ul li a.active::after {
     width: 100%;
+
 }
 
 /* icons navegation */
@@ -540,6 +542,10 @@ footer i {
     nav .menu ul li a.tittle {
         font-weight: 400;
         font-size: 1rem;
+    }
+
+    nav .menu ul li a.active {
+        font-weight: bold;
     }
     
     nav .icon-menu {
