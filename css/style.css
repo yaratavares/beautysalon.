@@ -1,9 +1,5 @@
-
-
-
-/*  */
 :root {
-    /* colors */
+   
     --hue: 159;
     --base-color: hsl(var(--hue) 36% 57%);
     --base-color-second: hsl(var(--hue) 65% 88%);
@@ -12,14 +8,14 @@
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
-    /* fonts */
+  
     --font-tittle: 700 1.3125rem 'Poppins', sans-serif;
     --font-tittle-detail: 800 1.3125rem 'Poppins', sans-serif;
     --font-h1: 700 1.875rem 'Poppins', sans-serif;
     --font-text: 400 1rem 'DM Sans', sans-serif;
     --font-button: 500 1rem 'DM Sans', sans-serif;
 }
-/* base */
+
 html {
     scroll-behavior: smooth;
 }
@@ -64,7 +60,7 @@ main {
     background: linear-gradient(270deg, hsla(var(--hue), 65%, 88%, 0.34), hsla(var(--hue), 36%, 57%, 1));
 }
 
-/* header */
+
 #header {
     width: 100%;
     background-color: var(--body-color);
@@ -79,7 +75,7 @@ main {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
-/* navegation */
+
 nav {
     height: 4.5rem;
 
@@ -96,7 +92,7 @@ nav span {
     color: var(--base-color);
 }
 
-/* show nav menu */
+
 nav .menu {
     opacity: 0;
     visibility: hidden;
@@ -162,8 +158,6 @@ nav ul li a:hover::after, nav ul li a.active::after {
 
 }
 
-/* icons navegation */
-
 .toggle {
     color: var(--base-color);
     font-size: 1.5rem;
@@ -189,7 +183,6 @@ nav.show div.icon-close {
     top: 1.5rem
 }
 
-/* home */
 .section {
     padding: 5rem 0;
 }
@@ -259,8 +252,6 @@ nav.show div.icon-close {
     background: var(--base-color-alt);
 }
 
-/* about */
-
 #about {
     background-color: white;
 }
@@ -301,7 +292,6 @@ nav.show div.icon-close {
     margin-bottom: 1rem;
 }
 
-/* services */
 .section header .tittle {
     margin-bottom: 1rem;
 }
@@ -348,7 +338,6 @@ nav.show div.icon-close {
     color: var(--base-color);
 }
 
-/* testimonials */
 #testimonials {
     background-color: white;
 }
@@ -400,7 +389,6 @@ nav.show div.icon-close {
     object-fit: cover;
 }
 
-/* swiper */
 .swiper-slide {
     height: auto;
     padding: 4rem 1rem;
@@ -410,7 +398,6 @@ nav.show div.icon-close {
     background-color: var(--base-color);
 }
 
-/* contact */
 #contact .grid {
     gap: 4rem;
 }
@@ -444,7 +431,6 @@ nav.show div.icon-close {
     color: var(--base-color);
 }
 
-/* footer */
 footer {
     background: var(--base-color);
 }
@@ -483,7 +469,6 @@ footer i {
     color: var(--text-color-light);
 }
 
-/* back to top */
 .back-to-top {
     background: var(--base-color);
     padding: 0.5rem;
@@ -528,7 +513,7 @@ footer i {
     .button {
         height: 3.125rem;
     }
-    /* barra de navegação */
+ 
     nav .menu {
         opacity: 1;
         visibility: visible;
@@ -552,7 +537,6 @@ footer i {
         display: none;
     }
     
-    /* home */
     #home .container {
         grid-auto-flow: column;
         justify-content: space-between;
@@ -569,13 +553,11 @@ footer i {
         text-align: left;
     }
 
-    /* about */
     #about .container{
         margin: 0 auto;
         grid-auto-flow: column;
     }
 
-    /* services */
     .card {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -585,13 +567,11 @@ footer i {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    /* testiomials */
     #testimonials .container {
         margin-right: auto;
         margin-left: auto;
     }
 
-    /* contact */
     #contact .container {
         grid-auto-flow: column;
         align-items: center;
@@ -601,7 +581,6 @@ footer i {
         max-width: 25rem;
     }
 
-    /* footer */
     footer.section {
         padding: 3.75rem 0;
     }
